@@ -320,6 +320,7 @@ span {
   margin: 65px auto;
   min-height: 200px;
   width: auto;
+  top: 20px:
 }
 
 .right-page {
@@ -327,7 +328,8 @@ span {
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 1fr;
-  padding: 50px 50px 50px 50px;
+  padding: 50px;
+  top: 20px;
   position: relative;
   min-height: 200px;
   width: auto;
