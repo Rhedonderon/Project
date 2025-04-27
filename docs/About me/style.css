@@ -305,6 +305,7 @@ span {
 
 .book-answer {
   display: none;
+  left: -20px;
 }
 
 .book-container.revealed .book-answer {
@@ -320,8 +321,7 @@ span {
   margin: 65px auto;
   min-height: 200px;
   width: auto;
-  top: 20px:
-  left: -20px:
+  top: 20px;
 }
 
 .right-page {
@@ -330,8 +330,8 @@ span {
   grid-template-rows: 1fr auto;
   grid-template-columns: 1fr;
   padding: 50px;
-  top: 40px;
-  left: 20px:
+  left: -20px:
+  top: 20px;
   position: relative;
   min-height: 200px;
   width: auto;
