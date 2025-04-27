@@ -251,6 +251,11 @@ p {
 }
 
 /* QUOTE GAME */
+.book-answer p {
+  left: 20px;
+  top: -20px;
+}
+
 cite {
   /* book game titles */
   font-style: normal;
