@@ -19,7 +19,7 @@ body {
 }
 
 .light-mode {
-  background: linear-gradient(to bottom, rgba(225, 225, 225, 0.85), rgba(225, 225, 225, 0.85));
+  background: linear-gradient(to bottom, rgba(225, 225, 225, 0.85), rgba(220, 220, 220, 0.80));
 }
 
 .light-mode textarea {
