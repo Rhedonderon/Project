@@ -251,11 +251,6 @@ p {
 }
 
 /* QUOTE GAME */
-.book-answer p {
-  left: 20px;
-  top: -20px;
-}
-
 cite {
   /* book game titles */
   font-style: normal;
@@ -295,7 +290,7 @@ span {
   /* all content for quotes */
   background-image: url('Book2.png');
   font-size: 0.8em;
-  background-size: fill;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -325,6 +320,7 @@ span {
   margin: 65px auto;
   min-height: 200px;
   width: auto;
+  position: left;
 }
 
 .right-page {
