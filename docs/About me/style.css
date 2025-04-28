@@ -290,7 +290,7 @@ span {
   /* all content for quotes */
   background-image: url('Book2.png');
   font-size: 0.8em;
-  background-size: cover;
+  background-size: fill;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -305,6 +305,7 @@ span {
 
 .book-answer {
   display: none;
+  text-align: left;
 }
 
 .book-container.revealed .book-answer {
@@ -320,7 +321,6 @@ span {
   margin: 65px auto;
   min-height: 200px;
   width: auto;
-  position: left;
 }
 
 .right-page {
