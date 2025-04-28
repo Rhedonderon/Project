@@ -366,6 +366,12 @@ span {
   left: 10em;
 }
 
+@media screen and (min-width: 1000px) {
+  .next-button {
+    left: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .dropdown-trigger {
     width: 90%;
