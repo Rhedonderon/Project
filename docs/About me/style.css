@@ -368,7 +368,8 @@ span {
 
 @media screen and (min-width: 1000px) {
   .next-button {
-    left: 0;
+    left: 20;
+    bottom: 0;
   }
 }
 
