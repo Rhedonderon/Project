@@ -609,13 +609,13 @@ footer {
   text-align: center;
   /*position: absolute;*/
   /*background-color: #333333;*/
-  background-image: url('/footer3.png');
+  background-image: url('footer3.png');
   background-size: cover;
   background-repeat: no-repeat;
   /*background: linear-gradient(to bottom, #3A3A28, #091418);  Apply a gradient */
   background: linear-gradient(to bottom, #073638, #01030f);
-  -webkit-mask-image: url('/footer3.png');
-    mask-image: url('/footer3.png');
+  -webkit-mask-image: url('footer3.png');
+    mask-image: url('footer3.png');
   -webkit-mask-size: 100%;
     mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
