@@ -115,7 +115,7 @@ body {
     /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195216_0001.png');*/
     /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195137_0004.png');*/
     /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195137_0003.png');*/
-    background-image: url('/Star.png'), url('/Night_Forest_Stars.png');
+    background-image: url('Star.png'), url('Night_Forest_Stars.png');
     background-size: auto, cover;
     background-position: top -22% left 32%, center;
     background-repeat: no-repeat, no-repeat;
@@ -433,7 +433,7 @@ span {
 
 #subcat_item-6 {
   /* all content for quotes */
-  background-image: url('/Book2.png');
+  background-image: url('Book2.png');
   /*height: 40vh;*/
   font-size: 0.8em;
   background-size: fill;
