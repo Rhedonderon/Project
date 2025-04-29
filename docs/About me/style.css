@@ -266,14 +266,14 @@ q {
 
 span {
   /* book game year */
-  font-size: 0.8em;
+  font-size: 0.8rem;
   color: #555;
 }
 
 .author {
   margin-top: 0.5em;
   font-family: "Open Sans", sans-serif;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 .reveal-button {
@@ -289,7 +289,7 @@ span {
 #subcat_item-6 {
   /* all content for quotes */
   background-image: url('Book2.png');
-  font-size: 0.8em;
+  font-size: 0.8rem;
   background-size: fill;
   background-repeat: no-repeat;
   background-position: top center;
