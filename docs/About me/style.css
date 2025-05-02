@@ -172,7 +172,7 @@ p {
   color: aliceblue;
   width: 100%;
   display: inline-block;
-  font-size: 1.8em;
+  /*font-size: 1.8em;*/
   font-weight: bold;
   text-decoration: underline;
 }
