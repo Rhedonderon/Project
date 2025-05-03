@@ -388,7 +388,7 @@ p .author {
   }
   
   #subcat_item-6 {
-    background-size: contain;
+    background-size: fill;
   }
 }
 
