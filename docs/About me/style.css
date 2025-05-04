@@ -92,6 +92,7 @@ h4 {
 
 /* TRIGGERS & DROPDOWNS */
 
+/* Your CSS code here */
 .dropdown-content {
   display: none;
 }
@@ -109,11 +110,17 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url('Star.png'), url('Night_Forest_Stars.png');
+    /* position: relative; to stack images*/
+    /*background-color: peachpuff;*/
+    /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195216_0001.png');*/
+    /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195137_0004.png');*/
+    /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195137_0003.png');*/
+    background-image: url('/Star.png'), url('/Night_Forest_Stars.png');
     background-size: auto, cover;
     background-position: top -22% left 32%, center;
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed, fixed;
+    /* animation: pulsate-star 3s infinite, none;*/
 }
 
 .content-wrap {
@@ -132,14 +139,88 @@ body {
   100% { opacity: 0.8; transform: scale(1.0); }
 }
 
+/* @keyframes star {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1) rotate(25deg)}
+}*/
+
 main {
   margin: 0 25px;
   width: 100%;
   flex-grow: 1;/*content takes up available space*/
   padding-bottom: 100px;
+  /*position: relative;*/
 }
 
-/* TODO WHISP */
+/* WHISP */
+/*.whisp-container {*/
+  /*z-index: 20;*/
+/*  position: fixed;
+  top: 60%;
+  left: 102%;
+  width: 100vw;
+  display: block;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+}*/
+
+/*.whisp {
+  width: 100%;
+  height: auto;
+  animation: pulsate 3s infinite ease-in-out;
+}*/
+
+/*@keyframes pulsate {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1) rotate(25deg)}
+}*/
+
+/*.speech-tail {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  clip-path: polygon(0 0, 100% 50%, 0 100% ); *//*makes shape for tail of speech bubble*/
+ /* top: 5vh;
+  left: vh;
+  transform: translateX(-50);
+  opacity: 0;*/ /*makes initially invisible*/
+  /*transition: opacity 3s ease-in-out;*/
+/*}*/
+
+/*.speech-box {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  min-width: 231px;
+  max-width: 231px;
+  min-height: 25px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+  white-space: wrap;
+  left: -22%;
+  top: 9%;
+}*/
+
+/*.whisp-container.speaking .speech-tail .whisp-container{
+  opacity: 1;*/ /*shows tail of speech bubble when speaking*/
+/*}*/
+
+/*.whisp-input {
+  position: absolute;
+  top: 10vh;
+  left: 30%;
+  background-color: rgba(225, 225, 225, 0);
+  color: aliceblue;
+  height: 5vh;
+  width: 50vw;
+  font-size: 2em;
+  padding: 10px;
+  border: solid lightblue 1px;
+  border-radius: 10px;
+  color: aliceblue;
+}*/
 
 p {
   text-indent: 2em
@@ -187,14 +268,20 @@ p {
 
 /*GALLERY*/
 #gallery {
+  /*display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;*/
   justify-content: center;
   align-items: center;
   gap: 16px;
+  /*max-width: 1400px;*/
   margin: 0 auto;
   padding: 20px 0 40px 0;
 }
 
 .x {
+  /*border: 5px solid white;
+  display: flex;*/ /* toggles alignment of gallery header instead of dropdown.*/
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
@@ -210,20 +297,36 @@ p {
 }
 
 .img-container {
+  /*grid-template-rows: 1fr 1fr;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;*/
+  /*max-width: 1400px;
+  padding: 10px 20px 20px 20px;*/
   flex-shrink: 0;
 }
 
 .img-container img {
+  /*width: 100%;
+  width: 200px;*/
   height: 250px;
   object-fit: cover;
   border-radius: 10px;
   max-width: 100%;
   width: 200px;
+  /*height: auto;*/
 }
 
 .horizontal-scroll {
+  /*display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;*/
   overflow-x: auto;
   white-space: nowrap;
+  /*min-width: 1300px;*/
 }
 
 .horizontal-scroll .content {
@@ -231,6 +334,10 @@ p {
   flex-direction: row;
   gap: 5px;
   width: 1300px;
+  /*transition: transform 0.3s ease;
+  overflow-x: auto;*/ /*allow scrolling if buttons don't work*/
+  /*width: auto;
+  scroll-behavior: smooth;*/
   white-space: nowrap;
 }
 
@@ -243,16 +350,36 @@ p {
   flex-direction: row;
 }
 
+/*.scroll-left .scroll-right {
+  position: absolute;
+  transform: translateY(-50);
+  cursor: pointer;
+  z-index: 10;
+  border: none;
+  padding: 10px;
+}*/
+
 .grid-container button {
+  /*text-align: center;*/
   font-size: 3rem;
   border-radius: 5px;
+  /*align-self: center;*/
   color: indianred;
   border: 1px solid aliceblue;
   background-color: rgba(0, 0, 0, 0);
   padding: 0;
   width: 1.5em;
   height: 4.5em;
+  /*display: inline-block;*/
 }
+
+/*.scroll-left {
+  left: 8px;
+}
+
+.scroll-right {
+  right: 8px;
+}*/
 
 /* QUOTE GAME */
 cite {
@@ -289,8 +416,10 @@ span {
   text-align: center;
   margin: 0 auto;
   position: relative;
-  left: 5em;
-  bottom: -8em;
+  /*right: -10em;
+  bottom: -8.5em;*/
+  right: -37em;
+  bottom: -14em;
 }
 
 .next-button {  
@@ -301,15 +430,16 @@ span {
   grid-column: 1;
   text-align: center;
   margin: 0 auto;
-  position: relative;
-  bottom: 3em;
-  left: 3em;
+  position: absolute;
+  bottom: -14em;
+  left: 10em;
 }
 
 #subcat_item-6 {
   /* all content for quotes */
-  background-image: url('Book2.png');
+  background-image: url('/Book2.png');
   /*min-height: 40vh;*/
+  min-height: 40em;
   font-size: 0.8em;
   background-size: contain;
   background-repeat: no-repeat;
@@ -320,7 +450,7 @@ span {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: black;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   width: 90%;
 }
 
@@ -329,11 +459,7 @@ span {
 }
 
 .book-container.revealed .book-answer {
-  display: block; /* Show the answer when .revealed class is added */
-}
-
-p .author {
-  color: red;
+  display: block;/* Show the answer when .revealed class is added */
 }
 
 .left-page {
@@ -341,10 +467,17 @@ p .author {
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 1fr;
-  padding: 0 auto;
-  margin: 4em 2em 4em 0em;
-  min-height: 200px;
-  width: 80%;
+  /*padding: 60px 20px;
+  margin: 65px auto;*/
+  /*padding: 4rem auto;
+  margin: 4rem 2rem 0 0;*/
+  /*margin: 4em 2em 4em 0em;*/
+  bottom: -6em;
+  left: 3em;
+  height: 18em;
+  width: 15em;
+  padding: 1em;
+  line-height: 2;
 }
 
 .right-page {
@@ -352,11 +485,14 @@ p .author {
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 1fr;
-  padding: 50px 50px 50px 50px;
-  position: relative;
-  min-height: 200px;
-  width: auto;
+  bottom: -6em;
+  right: -2em;
+  padding: 1em;
+  /*padding: 50px 50px 50px 50px;*/
+  /*top: -4em;
   margin: 60px auto;
+  top: 1.8em;
+  right: -4em;*/
 }
 
 .quote-slides-container {
@@ -379,18 +515,28 @@ p .author {
 
 /*desktop view on phone*/
 @media screen and (min-width: 980px) {
-  .left-page {
-    width: 70%;
+  /*.left-page {
+    width: 68%;
     margin: 0;
-    padding: 0;
-    top: 8em;
-    left: 0em;
+    padding: 0;*/
+    /*top: 8em;
+    left: 10em;*/
+    /*top: 4em;
+    left: 5em;
   }
   
-  #subcat_item-6 {
+  .right-page {
+    top: -3em;
+    left: -3em;
+  }*/
+  
+  /*.reveal-button {
+    top: 11.1em;
+  }*/
+  
+  /*#subcat_item-6 {
     background-size: cover;
-    height: 100%;
-  }
+  }*/
 }
 
 @media screen and (max-width: 600px) {
@@ -408,51 +554,51 @@ p .author {
     max-width: 200px;
   }
   
-  .answer {
+  /*.answer {
     width: 80%;
-  }
+  }*/
   
-  #subcat_item-6 {
-    background-size: 110%;
+  /*#subcat_item-6 {
+    background-size: 100%;
     width: 80%;
-  }
+  }*/
   
   .dropdown-content {
     padding: 0 auto;
   }
   
   .left-page {
-    position: absolute;
+    /*position: absolute;
     top: 7%;
     left: -2%;
     width: 50%;
     margin: 0;
-    padding: 0;
+    padding: 0;*/
   }
   
   .right-page {
-    width: 110%;
-    height: 100%;
+    /*width: 100%;
+    height: auto;
     margin: 0;
     padding: 0;
     right: -100%;
-    top: 7%;
+    top: 7%;*/
   }
   
   .book-answer {
     font-size: 0.7rem;
   }
   
-  .next-button {
+  /*.next-button {
     top: 0em;
     left: -5%;
-  }
+  }*/
   
-  .reveal-button {
-    position: absolute;
+  /*.reveal-button {
+    position: relative;
     bottom: -1rem;
     right: 0;
-  }
+  }*/
   
   q {
     font-size: 0.62em;
@@ -463,17 +609,21 @@ p .author {
     font-size: 0.5em;
   }
 }
+
 /* FOOTER */
 footer {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-image: url('footer3.png');
+  /*position: absolute;*/
+  /*background-color: #333333;*/
+  background-image: url('/footer3.png');
   background-size: cover;
   background-repeat: no-repeat;
+  /*background: linear-gradient(to bottom, #3A3A28, #091418);  Apply a gradient */
   background: linear-gradient(to bottom, #073638, #01030f);
-  -webkit-mask-image: url('footer3.png');
-    mask-image: url('footer3.png');
+  -webkit-mask-image: url('/footer3.png');
+    mask-image: url('/footer3.png');
   -webkit-mask-size: 100%;
     mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
@@ -513,20 +663,59 @@ footer nav a img {
   object-fit: cover;
 }
 
+/* toggle color example */
+.red {
+  color: red;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .right-page {
+    top: 3em;
+    left: 0em;
+    width: 13em;
+    height: 15em;
+  }
+  .left-page {
+    top: 3em;
+    left: 0;
+    width: 13em;
+    height: 15em;
+    line-height: 1.5;
+  }
+  
+ .reveal-button {
+    top: 8em;
+    left: 30em;
+  }
+  
+  .next-button {
+    top: 5.7em;
+    left: 4em;
+    height: 2.2em;
+  }
+}
+
 @media screen and (max-width: 600px) {
-  .horizontal-scroll{
+  .horizontal-scroll {
   }
   
   .x {
     padding: 0;
     margin: 0 auto;
     width: 90%;
+    
+  }
+  
+  .horizontal-scroll .img-container {
   }
   
   .grid-container {
     width: 100%;
     padding: 0;
     margin: 0;
+  }
+  
+  #gallery {
   }
   
   .img-container img {
@@ -540,4 +729,40 @@ footer nav a img {
     width: 1;
     font-size: 1rem;
   }
-}
+  
+  .left-page {
+    top: 0em;
+    left: 0em;
+    width: 8em;
+    height: 8em;
+    line-height: 0.9;
+    padding: 0.5em;
+  }
+  
+  .right-page {
+    right: 0;
+    bottom: 0;
+    width: 6em;
+    margin: 0;
+  }
+  
+  .right-page p {
+    top: -20em;
+  }
+  
+  .book-container.revealed .book-answer {
+  }
+  
+  .reveal-button {
+    left: 17em;
+    bottom: -3em;
+  }
+  
+  .next-button {
+    left: 0;
+    bottom: -3em;
+  }
+  
+  #subcat_item-6 {
+  }
+    }
