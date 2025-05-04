@@ -764,5 +764,6 @@ footer nav a img {
   }
   
   #subcat_item-6 {
+    height: none;
   }
-    }
+}
