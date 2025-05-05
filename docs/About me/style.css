@@ -115,7 +115,7 @@ body {
     /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195216_0001.png');*/
     /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195137_0004.png');*/
     /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195137_0003.png');*/
-    background-image: url('/Star.png'), url('/Night_Forest_Stars.png');
+    background-image: url('Star.png'), url('Night_Forest_Stars.png');
     background-size: auto, cover;
     background-position: top -22% left 32%, center;
     background-repeat: no-repeat, no-repeat;
@@ -438,7 +438,7 @@ span {
 
 #subcat_item-6 {
   /* all content for quotes */
-  background-image: url('/Book2.png');
+  background-image: url('Book2.png');
   /*min-height: 40vh;*/
   min-height: 40vh;
   height: auto;
@@ -619,13 +619,13 @@ footer {
   text-align: center;
   /*position: absolute;*/
   /*background-color: #333333;*/
-  background-image: url('/footer3.png');
+  background-image: url('footer3.png');
   background-size: cover;
   background-repeat: no-repeat;
   /*background: linear-gradient(to bottom, #3A3A28, #091418);  Apply a gradient */
   background: linear-gradient(to bottom, #073638, #01030f);
-  -webkit-mask-image: url('/footer3.png');
-    mask-image: url('/footer3.png');
+  -webkit-mask-image: url('footer3.png');
+    mask-image: url('footer3.png');
   -webkit-mask-size: 100%;
     mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
