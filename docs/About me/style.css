@@ -115,7 +115,7 @@ body {
     /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195216_0001.png');*/
     /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195137_0004.png');*/
     /*background-image: url('/Untitled (Desktop Wallpaper)_20250320_195137_0003.png');*/
-    background-image: url('Star.png'), url('Night_Forest_Stars.png');
+    background-image: url('/Star.png'), url('/Night_Forest_Stars.png');
     background-size: auto, cover;
     background-position: top -22% left 32%, center;
     background-repeat: no-repeat, no-repeat;
@@ -359,7 +359,7 @@ p {
   padding: 10px;
 }*/
 
-.grid-container button {
+.grid-container {
   /*text-align: center;*/
   font-size: 3rem;
   border-radius: 5px;
@@ -420,6 +420,7 @@ span {
   bottom: -8.5em;*/
   right: -37em;
   bottom: -14em;
+  color: red;
 }
 
 .next-button {  
@@ -430,16 +431,17 @@ span {
   grid-column: 1;
   text-align: center;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
   bottom: -14em;
   left: 10em;
 }
 
 #subcat_item-6 {
   /* all content for quotes */
-  background-image: url('Book2.png');
+  background-image: url('/Book2.png');
   /*min-height: 40vh;*/
-  min-height: 40em;
+  min-height: 40vh;
+  height: auto;
   font-size: 0.8em;
   background-size: contain;
   background-repeat: no-repeat;
@@ -622,8 +624,8 @@ footer {
   background-repeat: no-repeat;
   /*background: linear-gradient(to bottom, #3A3A28, #091418);  Apply a gradient */
   background: linear-gradient(to bottom, #073638, #01030f);
-  -webkit-mask-image: url('footer3.png');
-    mask-image: url('footer3.png');
+  -webkit-mask-image: url('/footer3.png');
+    mask-image: url('/footer3.png');
   -webkit-mask-size: 100%;
     mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
@@ -670,26 +672,28 @@ footer nav a img {
 
 @media screen and (min-width: 600px) and (max-width: 900px) {
   .right-page {
-    top: 3em;
-    left: 0em;
-    width: 13em;
+    top: 0em;
+    left: 1em;
+    width: 9em;
     height: 15em;
   }
   .left-page {
-    top: 3em;
-    left: 0;
-    width: 13em;
+    top: 1em;
+    left: 6em;
+    width: 10em;
     height: 15em;
-    line-height: 1.5;
+    line-height: 1.0;
+    font-size: 0.8em;
   }
   
  .reveal-button {
-    top: 8em;
-    left: 30em;
+    top: 0em;
+    left: 25em;
+    color: blue;
   }
   
   .next-button {
-    top: 5.7em;
+    top: 0em;
     left: 4em;
     height: 2.2em;
   }
@@ -731,31 +735,34 @@ footer nav a img {
   }
   
   .left-page {
-    top: 0em;
-    left: 0em;
-    width: 8em;
+    top: -1em;
+    left: 0.5em;
+    width: 6.5em;
     height: 8em;
-    line-height: 0.9;
+    line-height: 0.8;
     padding: 0.5em;
   }
   
   .right-page {
-    right: 0;
-    bottom: 0;
+    right: -1em;
+    top: -1.5em;
     width: 6em;
     margin: 0;
   }
   
-  .right-page p {
-    top: -20em;
+  .right-page p, .right-page span {
+    /*position: relative;
+    top: -1rem;
+    color: red;*/
   }
   
   .book-container.revealed .book-answer {
   }
   
   .reveal-button {
-    left: 17em;
+    left: 14em;
     bottom: -3em;
+    color: green;
   }
   
   .next-button {
@@ -764,6 +771,5 @@ footer nav a img {
   }
   
   #subcat_item-6 {
-    height: none;
   }
 }
