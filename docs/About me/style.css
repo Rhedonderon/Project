@@ -440,8 +440,6 @@ span {
   /* all content for quotes */
   background-image: url('Book2.png');
   /*min-height: 40vh;*/
-  min-height: 40vh;
-  height: auto;
   font-size: 0.8em;
   background-size: contain;
   background-repeat: no-repeat;
