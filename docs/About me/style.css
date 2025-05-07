@@ -108,7 +108,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url('Star.png'), url('Night_Forest_Stars.png');
+    background-image: url('Star.png'), url('/night_forest.png');
     background-size: auto, cover;
     background-position: top -22% left 32%, center;
     background-repeat: no-repeat, no-repeat;
@@ -276,24 +276,13 @@ span {
   font-size: 0.9em;
 }
 
-.reveal-button {
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  grid-row: 2;
-  grid-column: 1;
-  text-align: center;
-  position: relative;
-  width: 4em;
-  top: 10em;
-}
-
 #subcat_item-6 {
   /* all content for quotes */
-  background-image: url('Book2.png');
+  background-image: url('/book.png');
   font-size: 0.8em;
+  padding: 2em;
   min-height: 40vh;
-  background-size: contain;
+  background-size: 90% auto;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -301,6 +290,7 @@ span {
 .book-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto; /* row for buttons */
   color: black;
   width: 90%;
 }
@@ -314,23 +304,40 @@ span {
 }
 
 .left-page {
-  position: relative;
+  /*position: relative;
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 1fr;
   min-height: 200px;
-  width: auto;
+  width: auto;*/
   border: 1px solid red;
+  grid-row: 1;
+  grid-column: 1;
+  min-height: 9em;
+  position: relative;
+  left: 0.5em;
+  padding: 0.1em;
 }
 
 .right-page {
-  position: relative;
+  /*position: relative;
   display: grid;
   grid-template-rows: 1fr auto;
   grid-template-columns: 1fr;
   min-height: 200px;
-  width: auto;
+  width: auto;*/
   border: 1px solid blue;
+  grid-row: 1;
+  grid-column: 2;
+  position: relative;
+  min-height: 9em;
+  left: 0.8em;
+  padding: 0.1em;
+}
+
+.right-page p, .right-page span {
+  border: 1px solid pink;
+  position: relative;
 }
 
 .quote-slides-container {
@@ -351,12 +358,33 @@ span {
   display: block;
 }
 
+.button-wrapper {
+  grid-row: 2;
+  grid-column: 1 / 3;
+  width: 80%;
+  margin: 1em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid pink;
+}
+
 .next-button {
   cursor: pointer;
   padding: 5px;
   border-radius: 10px;
-  grid-row: 2;
-  grid-column: 1;
+  /*grid-row: 2;
+  grid-column: 1;*/
+  text-align: center;
+  position: relative;
+}
+
+.reveal-button {
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  /*grid-row: 2;
+  grid-column: 1;*/
   text-align: center;
   position: relative;
 }
@@ -366,12 +394,12 @@ footer {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-image: url('footer3.png');
+  background-image: url('/footer3.png');
   background-size: cover;
   background-repeat: no-repeat;
   background: linear-gradient(to bottom, #073638, #01030f);
-  -webkit-mask-image: url('footer3.png');
-    mask-image: url('footer3.png');
+  -webkit-mask-image: url('/footer3.png');
+    mask-image: url('/footer3.png');
   -webkit-mask-size: 100%;
     mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
@@ -450,12 +478,9 @@ footer nav a img {
   }
   
   .answer {
-    width: 80%;
   }
   
   #subcat_item-6 {
-    background-size: 110%;
-    width: 80%;
   }
   
   .dropdown-content {
@@ -463,15 +488,14 @@ footer nav a img {
   }
   
   .left-page {
-    left: -0.5em;
-    top: 0.5em;
-    width: 8.5em;
+    top: -1em;
+    line-height: 0.7;
+    padding-right: 0.5em;
+    font-size: 1.1em;
   }
   
   .right-page {
-    left: 0.8em;
-    top: 0.5em;
-    width: 8.5em;
+    top: -1em;
   }
   
   .book-answer {
@@ -479,12 +503,9 @@ footer nav a img {
   }
   
   .next-button {
-    
   }
   
   .reveal-button {
-    top: 1.7em;
-    left: 5em;
   }
   
   q {
@@ -506,28 +527,32 @@ footer nav a img {
     color: green;
   }
   
+  #subcat_item-6 {
+    padding-bottom: 8em;
+    background-size: 75% auto;
+  }
+  
   .left-page {
-    width: 12em;
-    left: 10em;
-    top: 0.7em;
-    font-size: 0.7em;
+    width: 70%;
+    height: 14em;
+    left: 4.5em;
+    top: 0.5em;
+    font-size: 0.8rem;
+    padding: 1em;
+    line-height: 1.4;
   }
   
   .right-page {
-    width: 12em;
-    top: 0.5em;
-    left: 1.8em;
-    font-size: 0.7em;
-    padding: 0 0.5em;
+    width: 70%;
+    height: 14em;
+    top: -0.5em;
+    padding: 1em;
   }
   
   .next-button {
-    
   }
   
   .reveal-button {
-    top: 1.9em;
-    left: 14em;
   }
 }
 
@@ -537,34 +562,21 @@ footer nav a img {
   }
   
   .left-page {
-    left: 1em;
-    top: 5.5em;
-    width: 15em;
-    height: 16em;
-    padding: 0.5em;
-    line-height: 2;
-    font-size: 1.2em;
   }
   
   .right-page {
-    width: 15em;
-    left: 1em;
-    top: 6.6em;
-    width: 20em;
   }
   
   .book-answer, .book-answer span{
-    padding: 1em;
   }
   
   .next-button {
-    top: 13em;
-    left: 4em;
   }
   
   .reveal-button {
-    top: 7.4em;
-    left: 18em;
+  }
+  
+  .button-wrapper {
   }
 }
 
