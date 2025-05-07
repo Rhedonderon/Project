@@ -108,7 +108,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url('Star.png'), url('/night_forest.png');
+    background-image: url('Star.png'), url('Night_Forest_Stars.png');
     background-size: auto, cover;
     background-position: top -22% left 32%, center;
     background-repeat: no-repeat, no-repeat;
@@ -278,7 +278,7 @@ span {
 
 #subcat_item-6 {
   /* all content for quotes */
-  background-image: url('/book.png');
+  background-image: url('book.png');
   font-size: 0.8em;
   padding: 2em;
   min-height: 40vh;
@@ -394,12 +394,12 @@ footer {
   margin: 0;
   padding: 0;
   text-align: center;
-  background-image: url('/footer3.png');
+  background-image: url('footer3.png');
   background-size: cover;
   background-repeat: no-repeat;
   background: linear-gradient(to bottom, #073638, #01030f);
-  -webkit-mask-image: url('/footer3.png');
-    mask-image: url('/footer3.png');
+  -webkit-mask-image: url('footer3.png');
+    mask-image: url('footer3.png');
   -webkit-mask-size: 100%;
     mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
