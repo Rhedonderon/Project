@@ -366,6 +366,7 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   border: 5px solid pink;
 }
 
@@ -438,7 +439,57 @@ footer nav a img {
   bottom: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
+  h1 {
+    color: yellow;
+  }
+  
+  #subcat_item-6 {
+    background-position: center;
+  }
+  
+  .left-page {
+    top: 0;
+    left: 0;
+    line-height: 0.75;
+    padding-right: 0.5em;
+    font-size: 0.7em;
+    padding: 0 0.5em;
+  }
+  
+  .right-page {
+    top: -0.7em;
+    left: 1em;
+  }
+  
+  .right-page p {
+    font-size: 70%;
+  }
+  
+  .button-wrapper {
+    
+  }
+  
+  .next-button {
+    
+  }
+  
+  .reveal-button {
+    
+  }
+  
+  .grid-container button {
+    height: 5em;
+    width: 1.5em;
+    font-size: 2rem;
+  }
+  
+  .grid-container {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
   .x {
     padding: 0;
     margin: 0 auto;
@@ -562,21 +613,36 @@ footer nav a img {
   }
   
   .left-page {
+    width: 80%;
+    padding: 1em;
+    min-height: 15em;
+    left: 2em;
+    top: 3em;
+    font-size: 1.2em;
+    line-height: 1.5;
   }
   
   .right-page {
+    width: 80%;
+    min-height: 15em;
+    padding: 1em;
+    top: 3em;
+    left: 2em;
+    font-size: 1.2em;
   }
   
   .book-answer, .book-answer span{
   }
   
   .next-button {
+    
   }
   
   .reveal-button {
   }
   
   .button-wrapper {
+    top: 10em;
   }
 }
 
@@ -585,11 +651,30 @@ footer nav a img {
     color: purple;
   }
   
+  #subcat_item-6 {
+    background-size: 60%;
+    background-position: center;
+    min-height: 140vh;
+  }
+  
   .left-page {
+    width: 56%;
+    left: 8.5em;
+    top: 5.5em;
+    height: 12em;
+    padding: 0.5em 1em;
+    line-height: 1;
   }
   
   .right-page {
-    
+    width: 56%;
+    top: 5em;
+    left: 2.5em;
+    height: 12em;
+  }
+  
+  .button-wrapper {
+    top: 10em;
   }
   
   .next-button {
