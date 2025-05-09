@@ -451,9 +451,9 @@ footer nav a img {
   .left-page {
     top: 6.5%;
     left: -0.6em;
-    line-height: 1;
+    line-height: 0.8;
     padding-right: 0.5em;
-    font-size: 0.6em;
+    font-size: 0.55em;
     width: 96%;
     padding-right: 1.3em;
   }
@@ -662,7 +662,7 @@ footer nav a img {
   .left-page {
     width: 65%;
     left: 5em;
-    top: 17%;
+    top: 13vh;
     height: 14em;
     font-size: 1.1em;
     line-height: 1;
@@ -695,30 +695,30 @@ footer nav a img {
   
   #subcat_item-6 {
     width: 65%;
-    height: 90vh;
+    height: 95vh;
   }
   
   .left-page {
-    width: 65%;
-    height: 9em;
-    left: 2.5em;
-    top: 4.5em;
+    width: 67%;
+    height: 13em;
+    left: 1.5em;
+    top: 6.5em;
     padding: 0.8em;
     font-size: 1.5em;
     line-height: 0.8;
   }
   
   .right-page {
-    width: 65%;
-    height: 7em;
+    width: 67%;
+    height: 10em;
     left: 2.5em;
-    top: 4.5em;
+    top: 6.5em;
     padding: 0.8em;
     font-size: 1.5em;
   }
   
   .button-wrapper {
-    top: 10em;
+    top: 13em;
   }
   
   .next-button {
