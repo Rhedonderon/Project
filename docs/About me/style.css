@@ -313,7 +313,7 @@ span {
   border: 1px solid red;
   grid-row: 1;
   grid-column: 1;
-  min-height: 9em;
+  min-height: 8em;
   position: relative;
   left: 0.5em;
   padding: 1em;
@@ -451,9 +451,9 @@ footer nav a img {
   .left-page {
     top: 5%;
     left: -0.5em;
-    line-height: 0.75;
+    line-height: 0.70;
     padding-right: 0.5em;
-    font-size: 0.7em;
+    font-size: 0.5em;
     width: 98%;
   }
   
@@ -618,7 +618,7 @@ footer nav a img {
     padding: 1em;
     min-height: 15em;
     left: 2.2em;
-    top: 19%;
+    top: 2.7em;
     font-size: 1.3em;
     line-height: 1.1;
   }
@@ -627,7 +627,7 @@ footer nav a img {
     width: 76%;
     min-height: 15em;
     padding: 1em;
-    top: 19%;
+    top: 2.7em;
     left: 2em;
     font-size: 1.2em;
   }
@@ -661,7 +661,7 @@ footer nav a img {
   .left-page {
     width: 65%;
     left: 5em;
-    top: 20%;
+    top: 5em;
     height: 14em;
     font-size: 1.1em;
     line-height: 1;
@@ -669,7 +669,7 @@ footer nav a img {
   
   .right-page {
     width: 60%;
-    top: 20%;
+    top: 5em;
     left: 2.5em;
     height: 12em;
   }
@@ -699,8 +699,8 @@ footer nav a img {
   
   .left-page {
     width: 55%;
-    height: 25em;
-    left: 5em;
+    height: 8em;
+    left: 2em;
     top: 10em;
     padding: 2em;
     font-size: 2em;
@@ -708,15 +708,15 @@ footer nav a img {
   
   .right-page {
     width: 55%;
-    height: 25em;
-    left: 5em;
+    height: 8em;
+    left: 2em;
     top: 10em;
     padding: 2em;
     font-size: 2em;
   }
   
   .button-wrapper {
-    top: 15em;
+    top: 7em;
   }
   
   .next-button {
