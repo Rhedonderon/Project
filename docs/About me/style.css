@@ -449,12 +449,13 @@ footer nav a img {
   }
   
   .left-page {
-    top: 6%;
+    top: 6.5%;
     left: -0.5em;
     line-height: 1;
     padding-right: 0.5em;
     font-size: 0.6em;
     width: 98%;
+    padding-right: 1.3em;
   }
   
   .right-page {
@@ -698,25 +699,26 @@ footer nav a img {
   }
   
   .left-page {
-    width: 60%;
+    width: 65%;
     height: 8em;
     left: 2em;
-    top: 2em;
+    top: 3.5em;
     padding: 1em;
-    font-size: 2em;
+    font-size: 1.8em;
+    line-height: 0.8;
   }
   
   .right-page {
-    width: 60%;
+    width: 65%;
     height: 6em;
     left: 2em;
-    top: 2em;
+    top: 3.5em;
     padding: 1em;
     font-size: 2em;
   }
   
   .button-wrapper {
-    top: 15%;
+    top: 20%;
   }
   
   .next-button {
