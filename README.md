@@ -44,6 +44,10 @@ This repository is organized into the following directories, each representing a
 
 To view each project, feel free to explore the live demos linked above or navigate to its respective folder within this repository and open the main HTML file (`index.html`) in your web browser.
 
+## Known Issues
+
+* There is a visual anomaly where header sizes within the multi-tiered dropdown menu on the "About Me" page appear larger when certain sections are clicked in the GitHub Desktop profile view on a mobile device. This issue did not manifest during local development on a laptop and requires further investigation.
+
 ## Author
 
 * Rebecca Rodriguez
